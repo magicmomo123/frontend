@@ -22,7 +22,7 @@ export default ({ nodes, setNodes, edges }) => {
 
     for (let node in ns) {
       if (node.type == "start") {
-        start_edges = edges.filter(edge => edge.source == node.id)
+        let start_edges = edges.filter(edge => edge.source == node.id)
       }
     }
   }
