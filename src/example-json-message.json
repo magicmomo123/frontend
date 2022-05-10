@@ -1,0 +1,29 @@
+{
+    "for": {
+        "start": 0,
+        "end": 0.5,
+        "type": "rail",
+        "body": {
+            "rail": {
+                "met_step": 0.01
+            },
+            "for": {
+                "start": 0,
+                "end": 360,
+                "type": "head",
+                "body": {
+                    "head": {
+                        "degrees": 45
+                    },
+                    "playrec": {
+                        "sound": ["chirp", "", "white"],
+                        "mic_channel": [1,2,3],
+                        "speaker_channel": [3],
+                        "sample_rate": 48000,
+                        "duration": 5
+                    }
+                }
+            }
+        }
+    }
+}
