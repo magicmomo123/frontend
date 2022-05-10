@@ -12,14 +12,12 @@ export default ({ nodes, setNodes, edges }) => {
   function submitInfo (ns, edges) {
     // ADD actual sending info to backend here:
     alert.show(
-      // (nodes.map((node) => {
-      //   if (node.type == "headControl") 
-      //     return `${nodeTypesMap[node.type]}` + " " + `${node.id}` + "- degrees: " + `${node.data.degrees}` + ", direction: " + `${node.data.direction}`;
-      // })
       "See console for message"
-      // this can be changed to any of the code below in the return statement
     )
-
+    console.log(ns)
+    console.log(edges)
+    
+    // TODO: Parse all information from created tree 
     for (let node in ns) {
       if (node.type == "start") {
         let start_edges = edges.filter(edge => edge.source == node.id)
@@ -53,7 +51,7 @@ export default ({ nodes, setNodes, edges }) => {
       <div className="title">Text Information</div>
       {nodes.map((node) => {
         if (node.type == "headControl") 
-          return <div key={node.id}>
+          return <div key={node.id}> {/* id is just order that nodes are created in*/}
               {nodeTypesMap[node.type]} {node.id} - degrees: {node.data.degrees}, direction: {node.data.direction}
             </div>
         else if (node.type == "railControl")
@@ -67,8 +65,8 @@ export default ({ nodes, setNodes, edges }) => {
             
       })}
 
-      <div className="selectall">
-        <button onClick={() => submitInfo(nodes)}>SUBMIT</button>
+      <div >
+        <button onClick={() => submitInfo(nodes, edges)}>SUBMIT</button>
       </div>
     </aside>
   );

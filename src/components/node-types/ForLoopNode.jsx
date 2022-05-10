@@ -42,12 +42,10 @@ function ForLoopNode({ data }) {
         <br />
         <label htmlFor="selector">NodeType:</label>
         <select value={robotType} onChange={onRobotTypeChange} >
-            {robotNodeTypes.map((nodeType) => {
-                return <option value={nodeType}>{nodeType}</option>
+            {robotNodeTypes.map(function (nodeType, i) {
+                return <option value={nodeType} key={i}>{nodeType}</option>
             })
             }
-        {/* //   <option value="head">Clockwise</option>
-        //   <option value="rail">Counterclockwise</option> */}
         </select>
         </form>
         <p style={{textAlign: "center"}}>body</p>
