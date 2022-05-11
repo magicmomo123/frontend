@@ -43,6 +43,7 @@ export default ({ nodes, setNodes, edges }) => {
   // }
   
   function populateObject(nodearray) {
+    //**THIS SOLUTION IS TENTATIVE. The reason behind the if statements is because I'm not sure of a better way to dynamically create a nested JS Object. This solution will be updated when I figure a better way out */
     obj = new Object()
     
     //findParent(node)
