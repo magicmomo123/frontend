@@ -10,16 +10,16 @@ function RailControlNode({ data }) {
     setMetStep(evt.target.value);
     data.metStep = evt.target.value
   }, []);
-  const [startPosition, setStartPosition] = useState(0);
-  const onStartPosChange = useCallback((evt) => {
-    setStartPosition(evt.target.value);
-    data.startPosition = evt.target.value
-  }, []);
-  const [endPosition, setEndPosition] = useState(0.5);
-  const onEndPositionChange = useCallback((evt) => {
-    setEndPosition(evt.target.value);
-    data.endPosition = evt.target.value
-  }, []);
+  // const [startPosition, setStartPosition] = useState(0);
+  // const onStartPosChange = useCallback((evt) => {
+  //   setStartPosition(evt.target.value);
+  //   data.startPosition = evt.target.value
+  // }, []);
+  // const [endPosition, setEndPosition] = useState(0.5);
+  // const onEndPositionChange = useCallback((evt) => {
+  //   setEndPosition(evt.target.value);
+  //   data.endPosition = evt.target.value
+  // }, []);
 
   return (
     <div className="text-updater-node">

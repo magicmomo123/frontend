@@ -5,7 +5,6 @@ import { Handle, Position } from 'react-flow-renderer';
 import '../../text-updater-node.css';
 
 function HeadControlNode({ data }) {
-
   const [startAngle, setStartAngle] = useState(0);
   const onStartAngleChange = useCallback((evt) => {
     setStartAngle(evt.target.value);
