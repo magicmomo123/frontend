@@ -6,7 +6,7 @@ import '../../text-updater-node.css';
 import { robotNodeTypes } from './Nodetypes';
 
 function ForLoopNode({ data }) {
-
+  
   const [firstIndex, setFirstIndex] = useState(0);
   const onFirstIndexChange = useCallback((evt) => {
     console.log(evt.target.value);

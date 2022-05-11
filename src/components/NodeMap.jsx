@@ -18,6 +18,7 @@ import RailControlNode from './node-types/RailControlNode';
 import PlayRecordNode from './node-types/PlayRecordNode';
 import ForLoopNode from './node-types/ForLoopNode';
 import StartNode from './node-types/StartNode';
+import { nodeDefaultData } from './node-types/Nodetypes';
 
 
 const nodeTypes = { 
@@ -75,7 +76,7 @@ const NodeMap = () => {
         id: getId(),
         type,
         position,
-        data: { label: `${type} node` },
+        data: nodeDefaultData[type],
       };
 
       setNodes((nds) => nds.concat(newNode));
