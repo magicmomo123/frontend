@@ -2,7 +2,8 @@ export const nodeTypesMap = {
     'headControl' : 'Head Control Node',
     'railControl' : 'Rail Control Node',
     'playRecord' : 'Play Record Node',
-    'forLoop' : 'For Loop Node'
+    'forLoop' : 'For Loop Node', 
+    'PositionNode' : 'Position Node'
 }
 
 export const robotNodeTypes = [

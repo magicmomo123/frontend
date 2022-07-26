@@ -26,7 +26,8 @@ const nodeTypes = {
   railControl: RailControlNode, 
   playRecord: PlayRecordNode, 
   forLoop: ForLoopNode, 
-  start: StartNode
+  start: StartNode, 
+
 };
 
 const initialNodes = [
